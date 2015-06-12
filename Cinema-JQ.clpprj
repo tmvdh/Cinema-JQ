@@ -5,6 +5,7 @@
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\js\js.js"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\Test.php"/>
 	</lastopfiles>
 	<errors version="5.3">
 		<errfile name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Entities\User.php">
@@ -34,13 +35,15 @@
 	</errors>
 	<codestructure version="5.0">
 		<phptree>
+			<treenode node="/src/Cinema/Data/FilmDAO.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f14;2;42;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
 			<treenode node="DBconfig.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\ScreenDAO.php;f14;3;26;3;;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\TicketDAO.php;f14;3;26;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="DBConfig.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\UserDAO.php;f14;3;26;3;;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f14;2;26;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="DBConfig.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\UserDAO.php;f14;3;26;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="Film.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f14;3;22;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="src/Cinema/Data/DBconfig.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f14;1;42;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="FilmDAO.PHP;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f14;2;25;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="src/Cinema/Entities/Film.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f14;2;42;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="Ticket.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\TicketDAO.php;f14;4;24;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -118,49 +121,49 @@
 				<treenode node="year;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Entities\Film.php;f12;5;17;5;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
 				</treenode>
 			</treenode>
-			<treenode node="FilmDAO;PHP:Class Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f0;6;1;84;;;;vpos;;v;;r;;d14,6;;b0,0;;m">
-				<treenode node="addFilm;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;27;5;32;;;;vpos;;v;;r;;d66,27;;b1,0;;mtitle;;pyear;;pdescription;;pruntime;;p">
-					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;29;47;29;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="FilmDAO;PHP:Class Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f0;5;1;85;;;;vpos;;v;;r;;d14,5;;b0,0;;m">
+				<treenode node="addFilm;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;26;5;31;;;;vpos;;v;;r;;d66,26;;b1,0;;mtitle;;pyear;;pdescription;;pruntime;;p">
+					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;28;47;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;29;95;29;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;28;95;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;29;71;29;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;28;71;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;29;12;29;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;28;12;28;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="description;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f43;27;55;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="description;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f43;26;55;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="runtime;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f57;27;65;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="runtime;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f57;26;65;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;28;12;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;27;12;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="title;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f28;27;34;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="title;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f28;26;34;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="year;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f36;27;41;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-				</treenode>
-				<treenode node="getFilm;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;8;5;16;;;;vpos;;v;;r;;d32,8;;b1,0;;mid;;p">
-					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;10;47;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;10;95;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;10;71;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;10;12;10;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="film;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;13;13;13;;;;vposFilm;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="id;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f28;8;31;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="result;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;12;15;12;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;11;18;11;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;9;12;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="year;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f36;26;41;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getFilmsByDate;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;34;5;45;;;;vpos;;v;;r;;d41,34;;b1,0;;mdate;;p">
-					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f35;34;40;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="getFilm;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;7;5;15;;;;vpos;;v;;r;;d32,7;;b1,0;;mid;;p">
+					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;9;47;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;9;95;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;9;71;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;9;12;9;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="film;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;12;13;12;;;;vposFilm;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f28;7;31;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="result;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;11;15;11;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;10;18;10;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;8;12;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getFilmsByDate;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;33;5;46;;;;vpos;;v;;r;;d41,33;;b1,0;;mdate;;p">
+					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f35;33;40;33;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;37;47;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
@@ -170,161 +173,151 @@
 					</treenode>
 					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;37;12;37;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="line;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;40;16;40;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="line;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;41;16;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="list;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;35;13;35;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="list;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;34;13;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;38;18;38;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="row;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f31;39;35;39;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="row;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f31;40;35;40;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;36;12;36;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-				</treenode>
-				<treenode node="getScreen;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;71;5;79;;;;vpos;;v;;r;;d39,71;;b1,0;;mShow_ID;;p">
-					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;73;47;73;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;73;95;73;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;73;71;73;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;73;12;73;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="result;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;75;15;75;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;74;18;74;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="screen;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;76;15;76;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f30;71;38;71;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;72;12;72;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;35;12;35;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getShows;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;47;5;60;;;;vpos;;v;;r;;d45,47;;b1,0;;mFilm_ID;;pdate;;p">
-					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f39;47;44;47;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="getScreen;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;72;5;80;;;;vpos;;v;;r;;d39,72;;b1,0;;mShow_ID;;p">
+					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;74;47;74;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;52;47;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;74;95;74;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;52;95;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;74;71;74;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;52;71;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;74;12;74;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;52;12;52;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="result;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;76;15;76;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="Film_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f29;47;37;47;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;75;18;75;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="line;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f12;55;17;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="screen;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;77;15;77;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="list;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;48;13;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f30;72;38;72;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;53;18;53;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="row;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f31;54;35;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;49;12;49;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;73;12;73;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getShowtime;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;61;5;70;;;;vpos;;v;;r;;d41,61;;b1,0;;mShow_ID;;p">
-					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;63;47;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="getShows;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;48;5;61;;;;vpos;;v;;r;;d45,48;;b1,0;;mFilm_ID;;pdate;;p">
+					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f39;48;44;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;63;95;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;53;47;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;63;71;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;53;95;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;63;12;63;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;53;71;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="result;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;65;15;65;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;53;12;53;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;64;18;64;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="Film_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f29;48;37;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f32;61;40;61;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="line;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f12;56;17;56;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;62;12;62;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="list;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;49;13;49;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="time;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;66;13;66;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;54;18;54;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="row;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f31;55;35;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;50;12;50;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getTitle;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;17;5;25;;;;vpos;;v;;r;;d33,17;;b1,0;;mid;;p">
-					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;19;47;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="getShowtime;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;62;5;71;;;;vpos;;v;;r;;d41,62;;b1,0;;mShow_ID;;p">
+					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;64;47;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;19;95;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;64;95;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;19;71;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;64;71;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;19;12;19;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;64;12;64;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="id;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f29;17;32;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="result;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;66;15;66;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="result;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;21;15;21;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;65;18;65;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;20;18;20;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f32;62;40;62;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;18;12;18;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;63;12;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="title;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;22;14;22;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="time;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;67;13;67;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getTitle;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f11;16;5;24;;;;vpos;;v;;r;;d33,16;;b1,0;;mid;;p">
+					<treenode node="DB_CONNSTRING;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f33;18;47;18;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="DB_PASSWORD;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f83;18;95;18;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="DB_USERNAME;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f59;18;71;18;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="dbh;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;18;12;18;;;;vposPDO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="id;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f29;16;32;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="result;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;20;15;20;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="resultSet;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;19;18;19;;;;vposPDOStatement;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;17;12;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="title;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php;f8;21;14;21;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
 			</treenode>
-			<treenode node="FilmService;PHP:Class Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f0;5;1;61;;;;vpos;;v;;r;;d17,5;;b0,0;;m">
-				<treenode node="getFilmsByDate;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;28;5;32;;;;vpos;;v;;r;;d41,28;;b1,0;;mdate;;p">
-					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f35;28;40;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="FilmService;PHP:Class Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f0;5;1;57;;;;vpos;;v;;r;;d17,5;;b0,0;;m">
+				<treenode node="getFilmsByDate;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;24;5;28;;;;vpos;;v;;r;;d41,24;;b1,0;;mdate;;p">
+					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f35;24;40;24;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;29;16;29;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;25;16;25;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="films;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;30;14;30;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="films;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;26;14;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getFilmsByDateJSON;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;7;2;16;;;;vpos;;v;;r;;d43,7;;b1,0;;mdate;;p">
-					<treenode node="aFilms;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f2;10;9;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
+				<treenode node="getFilmsByDateJSON;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;7;2;12;;;;vpos;;v;;r;;d43,7;;b1,0;;mdate;;p">
 					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f37;7;42;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="datedate;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f33;8;42;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="film;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f27;12;32;12;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
 					<treenode node="films;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f2;8;8;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="flm;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f3;13;7;13;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="i;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f21;12;23;12;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 					<treenode node="this;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;8;16;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getScreen;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;53;5;58;;;;vpos;;v;;r;;d39,53;;b1,0;;mShow_ID;;p">
-					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;54;16;54;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="getScreen;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;49;5;54;;;;vpos;;v;;r;;d39,49;;b1,0;;mShow_ID;;p">
+					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;50;16;50;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="screen;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;55;15;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="screen;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;51;15;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f30;53;38;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-				</treenode>
-				<treenode node="getShows;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;34;5;38;;;;vpos;;v;;r;;d45,34;;b1,0;;mFilm_ID;;pdate;;p">
-					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f39;34;44;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="Film_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f29;34;37;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;35;16;35;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="shows;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;36;14;36;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f30;49;38;49;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getShowtime;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;46;5;51;;;;vpos;;v;;r;;d41,46;;b1,0;;mShow_ID;;p">
-					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;47;16;47;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="getShows;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;30;5;34;;;;vpos;;v;;r;;d45,30;;b1,0;;mFilm_ID;;pdate;;p">
+					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f39;30;44;30;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f32;46;40;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="Film_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f29;30;37;30;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="time;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;48;13;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;31;16;31;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="shows;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;32;14;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getTitle;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;40;5;44;;;;vpos;;v;;r;;d38,40;;b1,0;;mFilm_ID;;p">
-					<treenode node="Film_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f29;40;37;40;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="getShowtime;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;42;5;47;;;;vpos;;v;;r;;d41,42;;b1,0;;mShow_ID;;p">
+					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;43;16;43;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;41;16;41;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f32;42;40;42;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="title;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;42;14;42;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="time;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;44;13;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getTitle;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;36;5;40;;;;vpos;;v;;r;;d38,36;;b1,0;;mFilm_ID;;p">
+					<treenode node="Film_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f29;36;37;36;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="FilmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;37;16;37;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="title;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;38;14;38;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
 			</treenode>
@@ -716,10 +709,10 @@
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\UserDAO.php" crc="1666027939"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\TicketDAO.php" crc="-1343374835"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\ScreenDAO.php" crc="1187955714"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php" crc="1228409268"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php" crc="-1110479140"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\DBconfig.php" crc="-156386325"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php" crc="-1773321924"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php" crc="-266940227"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php" crc="1006423063"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\js\js.js" crc="346031363"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_write-ticket.php" crc="1604745361"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php" crc="1604745361"/>

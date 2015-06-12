@@ -1,7 +1,6 @@
 <?php
-use PDO;
-require_once("DBConfig.php");
-require_once("Film.php");
+require_once("src/Cinema/Data/DBconfig.php");
+require_once("src/Cinema/Entities/Film.php");
 
 
 class FilmDAO {
@@ -34,11 +33,13 @@ class FilmDAO {
 
     public function getFilmsByDate($date){
         $list = array();
-        $sql = "select Film_ID, Title, Year, Description, Runtime from shows inner join films on shows.Film_ID = films.Film_ID where DATE(Time)='$date' AND Time > NOW()";
+        $sql = "select distinct films.Film_ID, Title, Year, Description, Runtime from shows inner join films on shows.Film_ID = films.Film_ID where DATE(Time)='$date' AND Time > NOW()";
+
         $dbh = new PDO(DBConfig::$DB_CONNSTRING, DBConfig::$DB_USERNAME, DBConfig::$DB_PASSWORD);
         $resultSet = $dbh->query($sql);
+       
         foreach ($resultSet as $row ){
-           $line = array($row["Film_ID"]);
+           $line = $row;
             array_push($list, $line);
         }
         $dbh = null;

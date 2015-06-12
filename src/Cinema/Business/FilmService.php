@@ -1,18 +1,14 @@
 <?php
 
-require_once("FilmDAO.PHP");
+require_once("/src/Cinema/Data/FilmDAO.php");
 
 
 Class FilmService{
 	
 	public function getFilmsByDateJSON ($date){
-		$films = $this->getFilmsByDate($datedate);
+		$films = $this->getFilmsByDate($date);
+		return json_encode($films);
 		
-		$aFilms = array();
-		
-		foreach ($films as $i => $film){
-			$flm = array();
-		}
 		
 	}
 	
