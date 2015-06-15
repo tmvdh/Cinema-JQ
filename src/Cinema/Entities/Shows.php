@@ -14,16 +14,16 @@ class Shows {
         $this->datetime = $datetime;
     }
     #getters
-    public function getID{
+    public function getID(){
         return $this->id;
     }
-    public function getFilm{
+    public function getFilm(){
         return $this->film;
     }
-    public function getScreen{
+    public function getScreen(){
         return $this->screen;
     }
-    public function getDatetime{
+    public function getDatetime(){
         return $this->datetime;
     }
     #setters

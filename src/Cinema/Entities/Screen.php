@@ -10,10 +10,10 @@ class Screen {
     }
 
     #getters
-    public function getID{
+    public function getID(){
         return $this->id;
     }
-    public function getSeats{
+    public function getSeats(){
         return $this->seats;
     }
     #setters

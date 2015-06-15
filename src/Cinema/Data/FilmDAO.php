@@ -40,7 +40,7 @@ class FilmDAO {
        
         foreach ($resultSet as $row ){
            $line = $row;
-            array_push($list, $line);
+           array_push($list, $line);
         }
         $dbh = null;
         return $list;
