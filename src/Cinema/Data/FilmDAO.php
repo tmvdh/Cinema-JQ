@@ -48,13 +48,13 @@ class FilmDAO {
   
     public function getShows($Film_ID, $date){
         $list = array();
-        $sql="select Show_ID, TIME(Time) as Time
+        $sql="select Show_ID, Screen_ID, TIME(Time) as Time
               from shows
               where Film_ID = $Film_ID AND Time like '$date%' AND Time > NOW()";
         $dbh = new PDO(DBConfig::$DB_CONNSTRING, DBConfig::$DB_USERNAME, DBConfig::$DB_PASSWORD);
         $resultSet = $dbh->query($sql);
         foreach ($resultSet as $row){
-            $line = array("ID" => $row["Show_ID"], "Time" => $row["Time"]);
+            $line = array("ID" => $row["Show_ID"], "Screen" => $row["Screen_ID"], "Time" => $row["Time"]);
             array_push($list, $line);
         }
         $dbh = null;

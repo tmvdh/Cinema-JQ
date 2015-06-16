@@ -3,10 +3,9 @@
 	<settings><PM_URL><![CDATA[http://localhost/Tom/Cinema-JQ/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/Tom/Cinema-JQ/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\index.html"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\js\js.js"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\Test.php"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php"/>
 	</lastopfiles>
 	<errors version="5.3">
 		<errfile name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Entities\User.php">
@@ -37,11 +36,11 @@
 	</errors>
 	<codestructure version="5.0">
 		<phptree>
-			<treenode node="/ajax_json_films.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\Test.php;f19;2;39;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="/src/Cinema/Business/FilmService.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f14;1;50;1;;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php;f14;1;50;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="/src/Cinema/Business/FilmService.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f14;1;50;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="/src/Cinema/Data/FilmDAO.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f14;2;42;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="/src/Cinema/Data/FilmDAO.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f14;2;42;2;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+			<treenode node="ajax_json_films.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\Test.php;f15;2;34;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="DBconfig.php;PHP:PHP Include;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\ScreenDAO.php;f14;3;26;3;;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\TicketDAO.php;f14;3;26;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -284,14 +283,12 @@
 					<treenode node="films;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;27;14;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="getFilmsByDateForJSON;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;7;2;13;;;;vpos;;v;;r;;d41,7;;b1,0;;m">
-					<treenode node="_GET;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f17;8;22;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="getFilmsByDateForJSON;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f8;7;2;13;;;;vpos;;v;;r;;d46,7;;b1,0;;mdate;;p">
+					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f40;7;45;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f2;8;7;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="filmDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f2;8;10;8;;;;vposFilmDAO;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 					<treenode node="films;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f2;9;8;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
-					<treenode node="this;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;9;16;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
 				<treenode node="getScreen;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php;f11;50;5;55;;;;vpos;;v;;r;;d39,50;;b1,0;;mShow_ID;;p">
@@ -569,6 +566,10 @@
 					</treenode>
 					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f40;25;48;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
+					<treenode node="ticket;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;28;15;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="TicketDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;27;18;27;;;;vposTicketDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
 					<treenode node="User_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f30;25;38;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
@@ -579,15 +580,35 @@
 					</treenode>
 					<treenode node="sname;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f36;32;42;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
+					<treenode node="user;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;34;13;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="userdao;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;33;16;33;;;;vposUserDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
 				</treenode>
 				<treenode node="checkSeat;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f11;39;5;43;;;;vpos;;v;;r;;d46,39;;b1,0;;mShow_ID;;pSeat;;p">
+					<treenode node="check;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;41;14;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
 					<treenode node="Seat;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f40;39;45;39;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f30;39;38;39;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
+					<treenode node="TicketDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;40;18;40;;;;vposTicketDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
 				</treenode>
 				<treenode node="getAllTickets;PHP:Function Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f11;12;5;23;;;;vpos;;v;;r;;d43,12;;b1,0;;mShow_ID;;p">
+					<treenode node="screen;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;17;15;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ScreenDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;16;18;16;;;;vposScreenDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="seating;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;18;16;18;;;;vposarray;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
 					<treenode node="Show_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f34;12;42;12;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ticket;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f29;19;36;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="TicketDAO;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;14;18;14;;;;vposTicketDAO;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="tickets;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php;f8;15;16;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
 			</treenode>
@@ -669,15 +690,15 @@
 					</treenode>
 				</treenode>
 			</treenode>
-			<treenode node="_GET;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f15;2;20;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="_GET;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f8;2;13;2;;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php;f15;2;20;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f0;2;5;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="date;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f0;2;5;2;;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php;f0;2;5;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="films;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\Test.php;f1;2;7;2;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="Film_ID;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php;f0;3;8;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="filmSvc;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f0;3;8;3;;;;vposFilmService;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="filmSvc;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f0;3;8;3;;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php;f0;4;8;4;;;;vposFilmService;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="output;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f0;4;7;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="output;PHP:Var Name;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php;f0;4;7;4;;C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php;f0;5;7;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 		</phptree>
 		<jstree>
@@ -707,16 +728,17 @@
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\UserDAO.php" crc="1666027939"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\TicketDAO.php" crc="-1343374835"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\ScreenDAO.php" crc="1187955714"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php" crc="-1051506912"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\FilmDAO.php" crc="-320170012"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Data\DBconfig.php" crc="-156386325"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\TicketService.php" crc="-1773321924"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php" crc="2063982675"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\src\Cinema\Business\FilmService.php" crc="683231335"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\nbproject\private\private.xml" crc="-1632789506"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\nbproject\project.xml" crc="-1137653955"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\js\js.js" crc="-1783150958"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\Test.php" crc="-1791113751"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\js\js.js" crc="115313151"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\Test.php" crc="1348314450"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_write-ticket.php" crc="1604745361"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php" crc="1604745361"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_shows.php" crc="175377065"/>
 		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_seats.php" crc="1604745361"/>
-		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php" crc="590013587"/>
+		<file name="C:\xampp\htdocs\Tom\Cinema-JQ\ajax_json_films.php" crc="192055388"/>
 	</filescache>
 </project>
