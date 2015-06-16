@@ -1,7 +1,7 @@
 <?php
 	
-	$films = include("/ajax_json_films.php");
-	print_r($films);
+	require_once("ajax_json_films.php");
+	
 	
 		
 ?>

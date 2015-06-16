@@ -5,10 +5,10 @@ require_once("/src/Cinema/Data/FilmDAO.php");
 
 Class FilmService{
 	
-	public function getFilmsByDateForJSON (){
-		$date = (isset($_GET['cc'])) ? $_GET['cc']:'';
-		$films = $this->getFilmsByDate($date);
-		return json_encode($films);
+	public function getFilmsByDateForJSON ($date){
+		$filmDAO = new FilmDAO();
+		$films = $filmDAO -> getFilmsByDate($date);
+		return $films;
 		
 		
 	}
