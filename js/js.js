@@ -14,8 +14,8 @@ $(document).ready(function(){
 	
 	
 	// Date submit - Return films
-	$('#dateSubmit').on("click", function(){
-		console.log('Click event triggered');
+	$('#date').change(function(){
+		console.log('Date change triggered');
 		$date = $('#date').val();
 		console.log("Date: " + $date);
 		$.getJSON("ajax_json_films.php?date=" + $date, function(filmdata){
@@ -28,6 +28,7 @@ $(document).ready(function(){
 				$('#filmlist').append('<p>').text("Geen films voor deze datum");
 			} 
 		});
+		 
 	 });
 	 
 	 // Select film - Return showings
@@ -40,22 +41,51 @@ $(document).ready(function(){
 	 	$Film_ID = $(this).val();
 	 	console.log("filmclick! Film_ID: " + $Film_ID);
 	 	
-	 	
-	 	/* AJAX CALL GOES HERE*/
-	 	
-	 	$.getJSON("ajax_json_shows.php?Film_ID=" + $Film_ID + "date=" + $date, function(showdata){
+	 	// AJAX Call #2
+	 	console.log("ajax_json_shows.php?Film_ID=" + $Film_ID + "&date=" + $date);
+	 	$.getJSON("ajax_json_shows.php?Film_ID=" + $Film_ID + "&date=" + $date, function(showdata){
 			console.log("Second AJAX call");
 			$('#showlist').empty();
 			$.each(showdata, function(data){
-				$('#showlist').append($('<li></li>').val(this.Show_ID).text("Zaal " + this.Screen_ID + " om " + this.Time).addClass('filmchoice'));
+				console.log(this);
+				$('#showlist').append($('<li></li>').val(this.ID).text("Zaal " + this.Screen + " om " + this.Time).addClass('showchoice'));
 			});
 			if(!($('#showlist').children().length > 0)){
-				$('#showlist').append('<p>').text("Geen films voor deze datum");
+				$('#showlist').append('<p>').text("Geen voorstellingen meer voor deze datum");
 			} 
 		});
 	 	
 	 	
 	 });
+	 
+	 
+	 // Register show selection - return available seating
+	 $('#showlist').on("click", 'li' , function(){
+	 	//visualise selection
+	 	$(this).parent().children().css("font-weight", "normal");
+	 	$(this).css("font-weight", "bold");
+	 	
+	 	$Show_ID = $(this).val();
+	 	console.log("Show selection! Show_ID: " + $Show_ID);
+	 	
+	 	// AJAX Call #3
+	 	
+	 	$.getJSON("ajax_json_seats.php?Show_ID=" + $Show_ID, function(showdata){
+			console.log("Third AJAX call");
+			$('#seats').empty();
+			$.each(showdata, function(data){
+				$('#seats').append($('<img src="img/seat" + this. + ".png">').val(this.Show_ID).text("Zaal " + this.Screen + " om " + this.Time).addClass('showchoice'));
+				
+			});
+			if(!($('#showlist').children().length > 0)){
+				$('#showlist').append('<p>').text("Geen voorstellingen meer voor deze datum");
+			} 
+		});
+		
+	 	
+	 	
+	 });
+	 
 	 
 	  	
 	 	

@@ -2,7 +2,7 @@
 
 class Shows {
 
-    $private $id;
+    private $id;
     private $film;
     private $screen;
     private $datetime;

@@ -4,6 +4,7 @@
 <title>Welcome to Tom's Cinema</title>
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="icon" type="image/png" href="favicon.png">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://jquery-ui.googlecode.com/svn-history/r3982/trunk/ui/i18n/jquery.ui.datepicker-nl.js"></script>
@@ -22,7 +23,8 @@
 		
 	</div>
 	<div id="pickdate">
-		<input type="text" id="date" class="datePicker"><button id="dateSubmit">Select Date</button>
+		<label for="date">Select date:  </label>
+		<input type="text" id="date" name="date" class="datePicker">
 	</div>
 	<div id="pickfilm">
 		<ul id="filmlist"><li>--- Pick A Film ---</li></ul>
@@ -34,6 +36,7 @@
 	</div>
 	<div id="pickseat">
 		--- show available seats ---
+		<div id="seats"></div>
 		<button>Next</button>
 	</div>
 	<div id="review">
