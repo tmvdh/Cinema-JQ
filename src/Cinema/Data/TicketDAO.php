@@ -1,8 +1,8 @@
 <?php
 
-use PDO;
-require_once("DBconfig.php");
-require_once("Ticket.php");
+require_once("src/Cinema/Data/DBconfig.php");
+require_once("src/Cinema/Entities/Ticket.php");
+
 
 
 class TicketDAO {

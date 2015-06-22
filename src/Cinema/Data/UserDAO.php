@@ -1,6 +1,6 @@
 <?php
 
-use PDO;
+
 require_once("DBConfig.php");
 
 

@@ -26,6 +26,8 @@ $(document).ready(function(){
 			});
 			if(!($('#filmlist').children().length > 0)){
 				$('#filmlist').append('<p>').text("Geen films voor deze datum");
+				$('#showlist').empty().append('<p>').text("--- Selecteer een film ---");
+				
 			} 
 		});
 		 
@@ -47,7 +49,7 @@ $(document).ready(function(){
 			console.log("Second AJAX call");
 			$('#showlist').empty();
 			$.each(showdata, function(data){
-				console.log(this);
+				
 				$('#showlist').append($('<li></li>').val(this.ID).text("Zaal " + this.Screen + " om " + this.Time).addClass('showchoice'));
 			});
 			if(!($('#showlist').children().length > 0)){
@@ -69,12 +71,16 @@ $(document).ready(function(){
 	 	console.log("Show selection! Show_ID: " + $Show_ID);
 	 	
 	 	// AJAX Call #3
-	 	
+	 	console.log("ajax_json_seats.php?Show_ID=" + $Show_ID);
 	 	$.getJSON("ajax_json_seats.php?Show_ID=" + $Show_ID, function(showdata){
 			console.log("Third AJAX call");
-			$('#seats').empty();
+			
+			
 			$.each(showdata, function(data){
-				$('#seats').append($('<img src="img/seat" + this. + ".png">').val(this.Show_ID).text("Zaal " + this.Screen + " om " + this.Time).addClass('showchoice'));
+				
+				$('#seats').append($("<img src=\"img/seats/" + this + ".png\">"));
+				
+				
 				
 			});
 			if(!($('#showlist').children().length > 0)){

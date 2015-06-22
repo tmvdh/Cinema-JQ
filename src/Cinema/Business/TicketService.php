@@ -1,11 +1,8 @@
 <?php
 
-namespace Cinema\Business;
-
-use Cinema\Data\TicketDAO;
-use Cinema\Data\ScreenDAO;
-use Cinema\Data\UserDAO;
-
+require_once("src/Cinema/Data/TicketDAO.php");
+require_once("src/Cinema/Data/ScreenDAO.php");
+require_once("src/Cinema/Data/UserDAO.php");
 
 
 class TicketService {

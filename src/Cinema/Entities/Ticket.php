@@ -15,21 +15,21 @@ class Ticket {
     }
 
     #getters
-    public function getID{
+    public function getID(){
         return $this->id;
     }
-    public function getUser{
+    public function getUser(){
         return $this->user;
     }
-    public function getShow{
+    public function getShow(){
         return $this->show;
     }
-    public function getSeat{
+    public function getSeat(){
         return $this->seat;
     }
     #setters
     public function setID($id){
-        $this->id = $id:
+        $this->id = $id;
     }
     public function setUser($user){
         $this->user = $user;
