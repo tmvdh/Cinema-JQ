@@ -66,19 +66,27 @@ $(document).ready(function(){
 	 	//visualise selection
 	 	$(this).parent().children().css("font-weight", "normal");
 	 	$(this).css("font-weight", "bold");
-	 	
+	 	// log to console
 	 	$Show_ID = $(this).val();
 	 	console.log("Show selection! Show_ID: " + $Show_ID);
-	 	
+	 	// clear seating first
+	 	$('#seats').empty();
 	 	// AJAX Call #3
 	 	console.log("ajax_json_seats.php?Show_ID=" + $Show_ID);
 	 	$.getJSON("ajax_json_seats.php?Show_ID=" + $Show_ID, function(showdata){
 			console.log("Third AJAX call");
-			
-			
-			$.each(showdata, function(data){
+		// extract row width
+			$row = showdata['0'];
+			console.log("Row Width: " + $row);
+						
+			$.each(showdata, function(index){
 				
-				$('#seats').append($("<img src=\"img/seats/" + this + ".png\">"));
+				if(this<=1){
+					$('#seats').append($("<img src=\"img/seats/" + this + ".png\" class=\"seat\">"));
+					if(index%$row==0){
+						$('#seats').append("<br>");
+					}
+				}
 				
 				
 				

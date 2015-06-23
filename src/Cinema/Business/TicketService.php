@@ -14,9 +14,11 @@ class TicketService {
         $ScreenDAO = new ScreenDAO();
         $screen = $ScreenDAO->getScreen($Show_ID);
         $seating = array_fill(1,$screen["Seats"], 0);
+        $seating["0"] = $screen["Width"];
         foreach ($tickets as $ticket){
             $seating[$ticket] = 1;
         }
+        
         return $seating;
     }
 
