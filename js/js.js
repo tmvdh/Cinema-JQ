@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	console.log("Document has loaded");
-	$('.pages').css({"display": "block", "border": "1px solid black"});
-	
+	$('.pages').css("display", "block");
+		
 	// datepicker
 	$.datepicker.setDefaults({
 		  showOn: "focus",
@@ -12,21 +12,32 @@ $(document).ready(function(){
 		  });
 	$('.datePicker').datepicker();
 	
+
 	
 	// Date submit - Return films
 	$('#date').change(function(){
 		console.log('Date change triggered');
+		
 		$date = $('#date').val();
-		console.log("Date: " + $date);
+		console.log($date);
+	
 		$.getJSON("ajax_json_films.php?date=" + $date, function(filmdata){
 			console.log("inside AJAX call");
+			// 
+			
+			// empty filmlist
 			$('#filmlist').empty();
+			
+			// display available films
 			$.each(filmdata, function(data){
 				$('#filmlist').append($('<li></li>').val(this.Film_ID).text(this.Title).addClass('filmchoice'));
+				
 			});
+			
 			if(!($('#filmlist').children().length > 0)){
 				$('#filmlist').append('<p>').text("Geen films voor deze datum");
-				$('#showlist').empty().append('<p>').text("--- Selecteer een film ---");
+				$('#showlist').empty();
+				$('#seats').empty();
 				
 			} 
 		});
@@ -41,7 +52,10 @@ $(document).ready(function(){
 	 	$(this).css("font-weight", "bold");
 	 	
 	 	$Film_ID = $(this).val();
-	 	console.log("filmclick! Film_ID: " + $Film_ID);
+	 	$Film_Title = $(this).text();
+	 	console.log($Film_Title);
+	 	
+	 	console.log("Film ID: " + $Film_ID);
 	 	
 	 	// AJAX Call #2
 	 	console.log("ajax_json_shows.php?Film_ID=" + $Film_ID + "&date=" + $date);
@@ -80,14 +94,16 @@ $(document).ready(function(){
 			console.log("Row Width: " + $row);
 						
 			$.each(showdata, function(index){
-				
-				if(this<=1){
-					$('#seats').append($("<img src=\"img/seats/" + this + ".png\" class=\"seat\">"));
-					if(index%$row==0){
+				if(this==0){
+					$('#seats').append($("<img src=\"img/seats/0.png\" class=\"available\">"));
+				}
+				if(this==1){
+					$('#seats').append($("<img src=\"img/seats/1.png\" class=\"unavailable\">"));
+				}
+				if(index%$row==0){
 						$('#seats').append("<br>");
 					}
-				}
-				
+							
 				
 				
 			});
@@ -100,6 +116,20 @@ $(document).ready(function(){
 	 	
 	 });
 	 
+	 // register seat choice, highlight seat
+	 $('#seats').on('click', 'img.available', function(){
+	 	$('.selected').removeClass("selected").attr("src", "img/seats/0.png");
+	 	$(this).attr("src", "img/seats/2.png").addClass("selected");
+	 	
+	 });
+	 // Click next — List data on confirmation page
+	 $('#confirmSeat').on("click", function(){
+	 	$('#review').empty();
+	 	$('#review').append('<h3>Confirm ticket</h3><p>'+ $Film_Title + '</p><p>Op ' + $date + ' om ' + </p>');
+	 	//$('#review').append($Film_Title);
+	 	//$('#review').append('<p>').text("Op " + $date + " om " +  + " in zaal ");
+	 	//$('#review').append('<p>').text();
+	 });
 	 
 	  	
 	 	
