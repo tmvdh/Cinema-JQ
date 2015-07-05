@@ -50,9 +50,9 @@ class TicketDAO {
             $dbh = new PDO(DBConfig::$DB_CONNSTRING, DBConfig::$DB_USERNAME, DBConfig::$DB_PASSWORD);
             $resultSet = $dbh->query($sql);
             $result = $resultSet->fetch();
-            $check = $result["count"];
+            $check = $result["count"]<>0 ? 'false': 'true';
             $dbh = null;
             return $check;
-            #NB Check returns true if seat taken!
+            #NB Check returns true if seat available!
         }
 }
